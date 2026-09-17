@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PasteIt — Support</title>
+<meta name="description" content="Support for PasteIt, a fast, private clipboard history manager for macOS. Features, FAQ, troubleshooting, and contact.">
+<meta property="og:title" content="PasteIt — Support">
+<meta property="og:description" content="A fast, private clipboard history manager for macOS.">
+<meta property="og:image" content="assets/icon.png">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="wrap">
+
+<header class="hero">
+  <img class="hero-icon" src="assets/icon.png" alt="PasteIt app icon" width="96" height="96">
+  <div>
+    <h1>PasteIt</h1>
+    <p class="tagline">A fast, private clipboard history manager for macOS.</p>
+    <p class="chips">
+      <span class="chip">Version 2.1.0</span>
+      <span class="chip">macOS 26 or later</span>
+      <span class="chip">Mac App Store</span>
+    </p>
+  </div>
+</header>
+
+<section>
+  <h2>About</h2>
+  <p>PasteIt keeps a history of the text and images you copy, so nothing you copy is ever lost.
+  Entries live in one place, can be collected automatically while you work (optional, off by default),
+  are searchable in real time, and are one double-click away from being copied back.</p>
+  <p>Everything is stored locally on your Mac. PasteIt works entirely offline — it has no analytics,
+  no ads, and never uploads your clipboard.</p>
+</section>
+
+<section>
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Clipboard entries</h3>
+      <p>Keep text and images as reusable entries. Pin favorites, rename, and reorder by drag &amp; drop.</p>
+    </div>
+    <div class="card">
+      <h3>Auto-collect</h3>
+      <p>Optionally capture text, images, and file paths copied in other apps. Apps such as password
+      managers can be excluded.</p>
+    </div>
+    <div class="card">
+      <h3>Timeline</h3>
+      <p>Every copied item becomes a card. Double-click to copy it back; deleted cards are recoverable.</p>
+    </div>
+    <div class="card">
+      <h3>Text editor</h3>
+      <p>Edit captured text with auto-save and word count, copy the whole text, or reveal its folder in Finder.</p>
+    </div>
+    <div class="card">
+      <h3>Images</h3>
+      <p>Paste or drag images in, browse downscaled thumbnails, and preview full size with pinch-to-zoom.</p>
+    </div>
+    <div class="card">
+      <h3>Recycle Bin</h3>
+      <p>Deleted items are kept for restoration. Storage limits clear out the oldest content automatically.</p>
+    </div>
+    <div class="card">
+      <h3>Search</h3>
+      <p>Instantly filter entries by name or content — performed in the background, never blocking the UI.</p>
+    </div>
+    <div class="card">
+      <h3>Menu bar &amp; hotkey</h3>
+      <p>Resides in the menu bar, wakes with a customizable global hotkey, and can launch at login.</p>
+    </div>
+    <div class="card">
+      <h3>Light &amp; dark · 6 languages</h3>
+      <p>Follows the system appearance, with English, Chinese, French, Russian, Spanish, and Arabic built in.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>Where is my data stored?</summary>
+    <p>On your Mac only, in <code>~/Library/Application Support/PasteIt/</code>. Nothing is uploaded
+    to any server. If you delete the app, this folder (and your history) remains until you remove it yourself.</p>
+  </details>
+
+  <details>
+    <summary>Does PasteIt connect to the internet?</summary>
+    <p>No. PasteIt works entirely offline: no analytics, no telemetry, no ads, and no third-party SDKs.
+    The Mac App Store version is sandboxed and has no network entitlements at all.</p>
+  </details>
+
+  <details>
+    <summary>How do I stop PasteIt from recording certain apps (for example, my password manager)?</summary>
+    <p>Auto-collect is off by default and only runs while it is enabled. For extra control, open
+    <strong>Settings → Privacy Exclusion</strong> and add apps by name or bundle identifier —
+    anything copied from those apps is never recorded.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete everything PasteIt has collected?</summary>
+    <p>Delete items in the app (they go to the Recycle Bin, where you can remove them permanently),
+    or quit PasteIt and delete the folder <code>~/Library/Application Support/PasteIt/</code> to erase
+    all data at once.</p>
+  </details>
+
+  <details>
+    <summary>Can I bring my history from the Windows version of PasteIt?</summary>
+    <p>Yes. The data layout is identical. Copy your old <code>Data/</code> and <code>Recycle/</code>
+    folders into <code>~/Library/Application Support/PasteIt/</code> and your entries appear seamlessly.</p>
+  </details>
+
+  <details>
+    <summary>Which macOS versions are supported?</summary>
+    <p>macOS 26 or later.</p>
+  </details>
+
+  <details>
+    <summary>The global hotkey doesn't respond.</summary>
+    <p>Another app may already use the same key combination. Choose a different combination in
+    Settings → Hotkey. Launching PasteIt again also wakes the running instance if the window is hidden.</p>
+  </details>
+
+  <details>
+    <summary>Auto-collect stopped capturing items.</summary>
+    <p>Check that Auto-collect is enabled in the menu bar menu or Settings, and that the source app
+    is not on the Privacy Exclusion list. Duplicate content is also skipped: identical text is collected
+    once in a row, and the most recent images are de-duplicated by content.</p>
+  </details>
+</section>
+
+<section>
+  <h2>Contact support</h2>
+  <p>Found a bug or have a feature request? Please
+  <a href="https://github.com/LiuYinCarl/pasteit-support/issues/new">open an issue on GitHub</a>
+  (you can also <a href="https://github.com/LiuYinCarl/pasteit-support/issues">browse existing issues</a>).</p>
+  <p>To help us investigate, please include:</p>
+  <ul>
+    <li>Your macOS version</li>
+    <li>The PasteIt version (shown at the top of the in-app Help window)</li>
+    <li>The steps to reproduce the problem, and what you expected to happen</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 PasteIt. All rights reserved.</p>
+  <nav><a href="index.html">Support</a> · <a href="privacy.html">Privacy Policy</a></nav>
+</footer>
+
+</main>
+</body>
+</html>
